@@ -1,7 +1,7 @@
 {
   "name": "pi-reset",
-  "version": "0.2.0",
-  "description": "Pi extension providing /reset and /quit commands with agent-callable reset and quit tools",
+  "version": "0.3.0",
+  "description": "Pi extension providing /reset and agent-callable reset and quit tools",
   "type": "module",
   "license": "MIT",
   "repository": {
@@ -20,6 +20,7 @@
     "node": ">=22.19.0"
   },
   "files": [
+    "index.ts",
     "reset.ts",
     "quit.ts",
     "README.md",
@@ -27,8 +28,7 @@
   ],
   "pi": {
     "extensions": [
-      "./reset.ts",
-      "./quit.ts"
+      "./index.ts"
     ]
   },
   "peerDependencies": {
