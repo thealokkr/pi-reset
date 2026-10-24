@@ -1,0 +1,37 @@
+{
+  "name": "pi-reset",
+  "version": "0.2.0",
+  "description": "Pi extension providing /reset and /quit commands with agent-callable reset and quit tools",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thealokkr/pi-reset.git"
+  },
+  "homepage": "https://github.com/thealokkr/pi-reset#readme",
+  "bugs": {
+    "url": "https://github.com/thealokkr/pi-reset/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "files": [
+    "reset.ts",
+    "quit.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./reset.ts",
+      "./quit.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}
